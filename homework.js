@@ -6,4 +6,4 @@ function addtoZero(array) {
     }
 }
 
-addtoZero([2])
+addtoZero([])
