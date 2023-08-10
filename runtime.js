@@ -48,25 +48,27 @@ const extraLargeArray = getSizedArray(100000);
 //insert 1.3508889 s
 //append 4.8774 ms
 
-// Results for the extraLargeArray
-// insert 1.2923682 s
-// append 3.4238 ms
+// Results for the largeArray
+// insert 11.4735 ms
+// append 593.8 μs
+
+
 
 
 
 
 // Try it with first function
 perf.start();                     // Starts timer
-doublerAppend(largeArray);
+doublerAppend(mediumArray);
 let resultsAppend = perf.stop();  // Stops timer and save time results
 
 
 // Try it with second function
 perf.start();
-doublerInsert(largeArray);
+doublerInsert(mediumArray);
 let resultsInsert = perf.stop();
 
 
-console.log('Results for the largeArray');
+console.log('Results for the mediumArray');
 console.log("insert", resultsInsert.preciseWords);
 console.log("append", resultsAppend.preciseWords);
