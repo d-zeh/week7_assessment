@@ -25,14 +25,12 @@ addtoZero([1, 2, 3, -2]);
 
 //Unique Characters
 function hasUniqueChars(word) {
-    for (let i = 0; i < word.length; i++) {
-        for (let j = 1; j < word.length; j++) {
-            if (i !== j) {
+    for (let i = 0; i < word.length-1; i++) {
+        for (let j = i+1; j < word.length; j++) {
                 if (word[i] === word[j]) {
                     console.log("false")
                     return false
                 }
-            }
         }
     }
     console.log(console.log("true"))
