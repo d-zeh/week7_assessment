@@ -8,13 +8,14 @@ function addtoZero(array) {
     for (let i = 0; i <array.length -1; i++) {
         for (let j = i+1; j <array.length; j++) {
             if (array[i] + array[j] == 0) {
-                console.log("false")
+                console.log("true")
                 return
             }
         }
     }
-    console.log("true")
+    console.log("false")
     return
+
 }
 
 addtoZero([2,3,4]);
