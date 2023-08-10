@@ -33,7 +33,7 @@ function hasUniqueChars(word) {
                 }
         }
     }
-    console.log(console.log("true"))
+    console.log("true")
     return true
 }
 hasUniqueChars("Monday");
