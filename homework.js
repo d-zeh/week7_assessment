@@ -19,10 +19,10 @@ function addtoZero(array) {
 
 addtoZero([2,3,4]);
 
-addToZero([]);
+addtoZero([]);
 
-addToZero([1]);
+addtoZero([1]);
 
-addToZero([1, 2, 3]);
+addtoZero([1, 2, 3]);
 
-addToZero([1, 2, 3, -2]);
+addtoZero([1, 2, 3, -2]);
