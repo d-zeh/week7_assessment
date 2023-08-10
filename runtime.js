@@ -57,17 +57,16 @@ const extraLargeArray = getSizedArray(100000);
 
 // Try it with first function
 perf.start();                     // Starts timer
-doublerAppend(LargeArray);
+doublerAppend(largeArray);
 let resultsAppend = perf.stop();  // Stops timer and save time results
 
 
 // Try it with second function
 perf.start();
-doublerInsert(LargeArray);
+doublerInsert(largeArray);
 let resultsInsert = perf.stop();
 
 
-console.log('Results for the LargeArray');
+console.log('Results for the largeArray');
 console.log("insert", resultsInsert.preciseWords);
 console.log("append", resultsAppend.preciseWords);
-console.log("what?")
