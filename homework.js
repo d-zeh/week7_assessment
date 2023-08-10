@@ -86,3 +86,5 @@ findLongestWord(["hi", "hello"])
 
 //Runtime: O(2n)
 //Space: O(2n)
+
+console.log('hi')
