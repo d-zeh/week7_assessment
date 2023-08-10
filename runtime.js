@@ -39,7 +39,7 @@ const smallArray = getSizedArray(100);
 const mediumArray = getSizedArray(1000);
 const largeArray = getSizedArray(10000);
 const extraLargeArray = getSizedArray(100000);
-
+const zehray = getSizedArray(50000);
 
 
 // How long does it take to double every number in a given 
@@ -60,21 +60,25 @@ const extraLargeArray = getSizedArray(100000);
 // insert 54.1 μs
 // append 114.5 μs
 
+// Results for the tinyArray
+// insert 39 μs
+// append 98.3 μs
+
 
 
 
 // Try it with first function
 perf.start();                     // Starts timer
-doublerAppend(tinyArray);
+doublerAppend(zehray);
 let resultsAppend = perf.stop();  // Stops timer and save time results
 
 
 // Try it with second function
 perf.start();
-doublerInsert(tinyArray);
+doublerInsert(zehray);
 let resultsInsert = perf.stop();
 
 
-console.log('Results for the tinyArray');
+console.log('Results for the zehray');
 console.log("insert", resultsInsert.preciseWords);
 console.log("append", resultsAppend.preciseWords);
