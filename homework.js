@@ -23,6 +23,9 @@ addtoZero([1]);
 addtoZero([1, 2, 3]);
 addtoZero([1, 2, 3, -2]);
 
+//Runtime: O(n^2)
+//Space: O(2)
+
 //Unique Characters
 function hasUniqueChars(word) {
     for(let i = 0; i < word.length-1; i++) {
@@ -38,6 +41,9 @@ function hasUniqueChars(word) {
 }
 hasUniqueChars("Monday");
 hasUniqueChars("Moonday")
+
+//Runtime: O(n^2)
+//Space: O(2)
 
 
 //Pangram
@@ -57,3 +63,26 @@ function isPangram(input) {
 }
 isPangram("The quick brown fox jumps over the lazy dog!");
 isPangram("I like cats, but not mice");
+
+
+//Runtime: O(n^2)
+//Space: O(n)
+
+
+//longest word
+
+function findLongestWord(list) {
+    let result = list[0];
+    for (let i = 1; i < list.length; i++) {
+        if (list[i].length > result.length) {
+            result = list[i];
+        }
+    }
+    console.log(result.length)
+    return result.length
+}
+
+findLongestWord(["hi", "hello"])
+
+//Runtime: O(2n)
+//Space: O(2n)
